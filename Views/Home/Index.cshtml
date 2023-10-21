@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Heroe
+<form asp-action="Create" method="POST">
+
+    <div>
+    <label asp-for="firstName">First Name</label>
+    <input asp-for="firstName">
+    <span asp-validation-for="lastName"></span>
+    </div>
+    <div>
+    <label asp-for="lastName">Last Name</label>
+    <input asp-for="lastName">
+    <span asp-validation-for="lastName"></span> 
+    </div>
+
+    <div>
+    <label asp-for="Age">Age</label>
+    <input asp-for="Age">
+    <span asp-validation-for="Age"></span>
+
+    </div>
+    
+    <div>
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email">
+    <span asp-validation-for="Email"></span>
+    </div>
+
+    <div>
+    <label asp-for="Pass">Password</label>
+    <input asp-for="Pass">
+    <span asp-validation-for="Pass"></span>
+    </div>
+
+    
+
+    <button type="submit"> Create</button>
+
+
+
+
+</form>
